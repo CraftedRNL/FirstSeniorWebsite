@@ -1,0 +1,38 @@
+*{
+    font-family: "MedievalSharp", cursive;
+    color: aliceblue;
+}
+html, body {
+  margin: 0;
+  height: 100%;
+   align-items: center;
+   background-image: url("../img/fire.gif");
+   background-size: 1100px;
+   background-repeat: repeat-x;
+  
+}
+.container-fluid{
+        display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}   
+.middle{
+    width:20%;
+    height: 15%;
+    display: flex;
+    justify-self: center;
+    text-align: center;
+    background-image: url("../img/introBack.webp");
+    border: 1px white solid;
+    cursor: pointer;
+}
+h1{
+    width: 100%;
+    align-self: center;
+    margin: 0px;
+    pad: 0px;
+}
