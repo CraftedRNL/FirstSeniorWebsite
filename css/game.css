@@ -20,12 +20,12 @@ html, body {
     height: 100%;
     width: 100%;
 }
-.col-3, .col-6 {
+.col-3, .col-6, .col-5 {
     border: 1px solid rgb(134, 195, 236);
     background-color: black;
   margin: 0;
   padding: 10px;
-  height: 100%;
+  height: auto;
    align-items: center;
 }
 .text-box{
@@ -33,13 +33,16 @@ html, body {
     background-color: rgb(121, 121, 117);
     margin-bottom: 2%;
     border: 2px ridge azure;
+    overflow-y: scroll;
 }
 .options-box{
+    display: flex;
     height: 15%;
     background-color: rgb(68, 68, 68);
     margin: 0px;
     border: 2px ridge azure;
-    
+    justify-content: center;
+    text-align: center;
 }
 .player-box{
     margin-left: 10px;
@@ -62,4 +65,21 @@ html, body {
  li{
     height: 15%;
     list-style-type: none;
+}
+img{
+    position: absolute;
+}
+.helmet, .swords, .chestplate, .shoes{
+    opacity: 0;
+}
+.options-1, .options-2{
+    padding: 0px;
+    border: 1px blue solid;
+    border: none;
+    font-size: 2em;
+    align-content: center;
+    cursor: pointer;
+}
+.options-1{
+    border-right: 5px red dotted;
 }
