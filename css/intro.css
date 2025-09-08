@@ -3,13 +3,14 @@
     color: aliceblue;
 }
 html, body {
+    background-color: black;
   margin: 0;
   height: 100%;
    align-items: center;
    background-image: url("../img/fire.gif");
-   background-size: 1100px;
+   background-size: auto 100%;
    background-repeat: repeat-x;
-  
+  background-position: bottom;
 }
 .container-fluid{
         display: flex;
@@ -29,10 +30,20 @@ html, body {
     background-image: url("../img/introBack.webp");
     border: 1px white solid;
     cursor: pointer;
-}
+    background-size: auto 100%;
+   background-repeat: repeat-x;
+  background-position: bottom;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}   
 h1{
     width: 100%;
     align-self: center;
     margin: 0px;
     pad: 0px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    font-size: clamp(1rem, 5vw, 2rem);
 }

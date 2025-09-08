@@ -1,0 +1,65 @@
+*{
+    font-family: "MedievalSharp", cursive;
+    color: aliceblue;
+}
+html, body {
+    border: 1px solid white;
+    background-color: black;
+  margin: 0;
+  height: 100%;
+   align-items: center;
+}
+.container-fluid{
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}   
+.row{
+    height: 100%;
+    width: 100%;
+}
+.col-3, .col-6 {
+    border: 1px solid rgb(134, 195, 236);
+    background-color: black;
+  margin: 0;
+  padding: 10px;
+  height: 100%;
+   align-items: center;
+}
+.text-box{
+    height: 83%;
+    background-color: rgb(121, 121, 117);
+    margin-bottom: 2%;
+    border: 2px ridge azure;
+}
+.options-box{
+    height: 15%;
+    background-color: rgb(68, 68, 68);
+    margin: 0px;
+    border: 2px ridge azure;
+    
+}
+.player-box{
+    margin-left: 10px;
+    height: 50%;
+    margin-bottom: 2%;
+    background-color: rgb(121, 121, 117);
+    border: 2px ridge azure;
+}
+.stat-box{
+    margin-left: 10px;
+    height: 48%;
+    background-color: rgb(68, 68, 68);
+
+    border: 2px ridge azure;
+    text-align: center;
+}
+.stat-header{
+    border-bottom: dashed 1px white;
+}
+ li{
+    height: 15%;
+    list-style-type: none;
+}
