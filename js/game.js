@@ -61,7 +61,7 @@ function makeMessage(message) {
 
 function theEND() {
     makeMessage("THE END, YOU HAVE FAILED, REFRESH TO TRY AGAIN");
-    document.getElementById('image').style.backgroundImage = `url("../img/death.webp")`;
+    document.getElementById('image').style.backgroundImage = "url(img/death.webp)";
 }
 function toVillage() {
     makeMessage("You make your way to the beginner village.");
@@ -74,7 +74,7 @@ function toDemonKingCastle() {
     makeMessage("What do you do?");
     document.getElementById("option-1").innerHTML = "[Fight the Demon King]"
     document.getElementById("option-2").innerHTML = "[Run Away]";
-    document.getElementById('image').style.backgroundImage = `url("../img/demon_king.jpg")`;
+    document.getElementById('image').style.backgroundImage = "url(img/demon_king.jpg)";
 }
 function fightDemonKing() {
     totalStats = 0;
@@ -86,7 +86,7 @@ function fightDemonKing() {
             makeMessage("The demon king has fallen, his reign of terror ended, and his darkness scattered like smoke before the light. The courage and strength that carried you through this battle will be remembered as the turning point when despair gave way to hope. The land breathes again, and the people can finally lift their heads without fear. Today is not just a victory over an enemy, but proof that even the greatest shadows cannot withstand the will to fight for a brighter future.");
             document.getElementById("option-1").innerHTML = "THE";
     document.getElementById("option-2").innerHTML = "END";
-    document.getElementById('image').style.backgroundImage = `url("../img/victory.jfif")`;
+    document.getElementById('image').style.backgroundImage = "url(img/victory.jfif)";
             break;
         }else if(stats[i] < 10 || totalStats < 20){
             makeMessage("You fought bravely, but your strength was not enough to overcome the might before you. The battle is lost, the light falters, and the shadows close in around you. Though your spirit burned fiercely, it could not withstand the storm, and now silence claims what courage could not save. This defeat is heavy, but even in failure, the memory of your struggle endures.");
@@ -118,7 +118,7 @@ function helpVillagers() {
     document.getElementById('chestplate').style.opacity = '1';
     document.getElementById("option-1").innerHTML = "[Press Deeper]"
     document.getElementById("option-2").innerHTML = "[Camp at its Edge]";
-    document.getElementById('image').style.backgroundImage = `url("../img/forest.jpg")`;
+    document.getElementById('image').style.backgroundImage = "url(img/forest.jpg)";
 }
 function pressDeeper() {
     makeMessage("You clash with monstrous wolves, their fangs deflecting harmlessly from your new chestplate. After a harrowing battle, you discover the skeletal remains of a forgotten ranger, his enchanted boots intact. When you pull them on, you feel lighter, faster, ready to outrun the shadows themselves.")
@@ -130,7 +130,7 @@ function pressDeeper() {
     dex +=10;
     stats[1] = dex;
     document.getElementById('dex').innerText = "Dexterity (DEX): " + dex;
-    document.getElementById('image').style.backgroundImage = `url("../img/mountain.jfif")`;
+    document.getElementById('image').style.backgroundImage = "url(img/mountain.jfif)";
 }
 function camp() {
     makeMessage("The night stretches into terror, as glowing eyes surround you and claws rip through your armor—your screams swallowed by the endless dark.");
@@ -151,7 +151,7 @@ function hiddenPath() {
     document.getElementById('str').innerText = "Strength (STR): " + str;
     document.getElementById("option-1").innerHTML = "[16]"
     document.getElementById("option-2").innerHTML = "[15]";
-    document.getElementById('image').style.backgroundImage = `url("../img/priestess.jpg")`;
+    document.getElementById('image').style.backgroundImage = "url(img/priestess.jpg)";
 }
 function answer16() {
     makeMessage("You have answered incorrectly. The priestess's eyes flash with disappointment as she raises her staff, and a wave of dark energy engulfs you. Your vision fades as you succumb to the curse of ignorance, your journey ending in the shadows of your own folly.");
